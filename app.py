@@ -32,7 +32,7 @@ def generate_response():
     ans = ans_json['results'][0]['reply']
     chat_logs.append('you:'+message)
     chat_logs.append('bot:'+ans)
-    for chat_log in chat_log:
+    for chat_log in chat_logs:
         st.write(chat_log)
         
 if st.button("送信"):
