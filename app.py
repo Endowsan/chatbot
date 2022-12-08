@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-apikey = "DZZixcVPZqTWl5MQu1dVAwty2N8qnjyH"
+apikey = st.secrets.key
 
 #チャットのやり取りを記録するリスト
 chat_logs = []
